@@ -1,3 +1,4 @@
+# KidsCanCode - Game Development with Pygame video series
 # Shmup game - part 10
 # Video link: https://www.youtube.com/watch?v=AdG_ITCFHDI
 # Explosions
@@ -175,16 +176,16 @@ background_rect = background.get_rect()
 player_img = pygame.image.load(path.join(img_dir, "C:\ship.png")).convert()
 bullet_img = pygame.image.load(path.join(img_dir, "C:\laserBullet.png")).convert()
 meteor_images = []
-meteor_list = ["C:\Meteor1.png", "C:\Meteor3.png", "C:\Meteor3.png",
-               "C:\Meteor2.png", "C:\Meteor2.png", "C:\Meteor1.png",
-               "C:\Meteor1.png"]
+meteor_list = ["C:\Start Explosion.png", "C:\Start Explosion.png", "C:\Start Explosion.png",
+               "C:\Start Explosion.png", "C:\Start Explosion.png", "C:\Start Explosion.png",
+               "C:\Start Explosion.png"  ]
 for img in meteor_list:
     meteor_images.append(pygame.image.load(path.join(img_dir, img)).convert())
 explosion_anim = {}
 explosion_anim['lg'] = []
 explosion_anim['sm'] = []
 for i in range(9):
-    filename = "C:\explosion3.png".format(i)
+    filename = "C:\explosion.png".format(i)
     img = pygame.image.load(path.join(img_dir, filename)).convert()
     img.set_colorkey(BLACK)
     img_lg = pygame.transform.scale(img, (75, 75))
